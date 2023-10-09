@@ -106,7 +106,7 @@ addEventListener("load", () => {
 		if (G.currentQuote == "")  return;
 		let displayLine = G.currentQuote + "<br/>";
 		if (G.currentAuthor != "") {
-			displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A quote from <a href='https:google.com/search?q=\"" + encodeURIComponent(G.currentAuthor) + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
+			displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A quote from <a href='https://google.com/search?q=\"" + encodeURIComponent(G.currentAuthor) + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
 		} else {
 			displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A quote from an unknown person.";
 		}
