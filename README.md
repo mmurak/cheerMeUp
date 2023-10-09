@@ -1,6 +1,6 @@
 # cheerMeUp -- Speaks motivational quotes with ElevenLabs TTS
 
-このアプリケーションは、過去・現在の偉人や賢人の名言（英語）をElevenLabsの音声合成機能を用いて再生することで、リスニング能力の向上とモチベーションアップを図ろうというものです。
+このアプリケーション (https://mmurak.github.io/cheerMeUp/index.html) は、過去・現在の偉人や賢人の名言（英語）をElevenLabsの音声合成機能を用いて再生することで、リスニング能力の強化と、日々の勉強／仕事におけるモチベーションの向上を図ろうというものです。
 
 ![Fig](https://github.com/mmurak/cheerMeUp/assets/7446897/d1fe80a5-bb2f-4a35-a130-ef2868926d05)
 
@@ -13,7 +13,7 @@
 ## 基本的な使い方
 
 1. ［Give me a piece of wisdom］ボタンを押すと設定された「声」（Voice）で音声が聞けます。
-1. リスニングした結果を白いテキスト枠内に打ち込みます。
+1. リスニングした結果を白いテキスト枠内に打ち込みます（任意）。
 1. 一度で聞き取れなかった場合は［Replay］ボタンを押すと再度音声が聞けます。
 1. ［Display text］ボタンを押すと、正解（？）が表示されます。
 1. ［Utter this］ボタンを押すと白いテキスト枠の内容が、設定された「声」で再生されるため、聴き比べることができます。
