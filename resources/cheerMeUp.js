@@ -105,10 +105,11 @@ addEventListener("load", () => {
 	G.displayText.addEventListener("click", () => {
 		if (G.currentQuote == "")  return;
 		let displayLine = G.currentQuote + "<br/>";
+		displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A <a href='https://google.com/search?q=\"" + G.currentQuote + "\"' style='text-decoration:none;color:black' target='_blank'>quote</a> from ";
 		if (G.currentAuthor != "") {
-			displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A quote from <a href='https://google.com/search?q=\"" + encodeURIComponent(G.currentAuthor) + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
+			displayLine += "<a href='https://google.com/search?q=\"" + G.currentAuthor + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
 		} else {
-			displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A quote from an unknown person.";
+			displayLine += "an unknown person.";
 		}
 		G.wisdomArea.innerHTML = displayLine;
 	});

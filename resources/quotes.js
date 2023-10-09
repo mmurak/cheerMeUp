@@ -446,7 +446,7 @@ var quoteDict = [
 ["Henry Van Dyke","Be glad of life because it gives you the chance to love, to work, to play, and to look up at the stars."],
 ["Yogi Berra","You got to be careful if you don't know where you're going, because you might not get there."],
 ["Naguib Mahfouz","You can tell whether a man is clever by his answers. You can tell whether a man is wise by his questions."],
-["Anthony Robbins","Life is a gift, and it offers us the privilege, opportunity, and responsibility to give something back by becoming more"],
+["Anthony Robbins","Life is a gift, and it offers us the privilege, opportunity, and responsibility to give something back by becoming more."],
 ["John Wooden","You can't let praise or criticism get to you. It's a weakness to get caught up in either one."],
 ["Og Mandino","I will love the light for it shows me the way, yet I will endure the darkness because it shows me the stars."],
 ["Jane Addams","Our doubts are traitors and make us lose the good we often might win, by fearing to attempt."],
