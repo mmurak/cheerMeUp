@@ -1,2 +1,57 @@
-# cheerMeUp
-Speaks motivational quotes with ElevenLabs TTS
+# cheerMeUp -- Speaks motivational quotes with ElevenLabs TTS
+
+このアプリケーションは、過去・現在の偉人や賢人の名言（英語）をElevenLabsの音声合成機能を用いて再生することで、リスニング能力の向上とモチベーションアップを図ろうというものです。
+
+![Screen image](img/Fig.jps)
+
+## 必要なもの
+
+- ブラウザー（Google Chromeでテストしています）
+- インターネット接続
+- ElevenLabsのAPI Key（取得方法は後述）
+
+## 基本的な使い方
+
+1 ［Give me a piece of wisdom］ボタンを押すと設定された「声」（Voice）で音声が聞けます。
+1 リスニングした結果を白いテキスト枠内に打ち込みます。
+1 一度で聞き取れなかった場合は［Replay］ボタンを押すと再度音声が聞けます。
+1 ［Display text］ボタンを押すと、正解（？）が表示されます。
+1 ［Utter this］ボタンを押すと白いテキスト枠の内容が、設定された「声」で再生されるため、聴き比べることができます。
+
+## 使用に先立つ準備と注意事項
+
+- ElevenLabsのAPI Keyを［API Key］欄に入力し、右隣の［Set up］ボタンを押します。
+
+この操作により［Voice］選択が可能になります。
+
+※ 注意事項：
+［Set up］ボタンを押すと、使用準備が整えられるとともに、PC／スマホ／タブレット（以下「端末」と表記）内の保存領域に API Key が保存されます。
+これにより、使用時に毎回API Key（とVoice）を設定する必要はなくなりますが、他の人が端末を使用する可能性がある場合には、使用終了時に毎回［Forget API-Key］ボタンを押し、端末の保存領域をクリアするようにしてください。
+
+## ElevenLabsのAPI Keyを取得するには
+
+既にElevenLabsのユーザー登録を済ませている場合には、4に進んでください。
+
+1. [https://elevenlabs.io/](https://elevenlabs.io/) にアクセスし、右上のボタンをクリックする。
+
+(img/FigA.jpg)
+
+2. 以下の画面が表示されるため、Sign upをクリックする。
+
+(img/FigB.jpg)
+
+3. 以下の画面が表示されるため、Googleのアカウントでサインアップするか、自前のメールアドレスでサインアップするかに応じて必要事項を記述する（この手順の終了後、確認メールが届きます）。
+
+(img/FigC.jpg)
+
+4. サインインすると以下の画面が表示されるため、ユーザーアイコン（ここでは家紋が表示されています）をクリックする。
+
+(img/FigD.jpg)
+
+5. すると画面が以下のようになるため、［Profile］をクリックする。
+
+(img/FigE.jpg)
+
+6. 以下のようなProfile Setting画面が表示されるため、「目」のアイコンをクリックすると、API Key欄の「**********」が文字群に変化するため、その文字群をコピーする。
+
+(img/FigF.jpg)
