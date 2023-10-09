@@ -1,2 +1,2 @@
 # cheerMeUp
-Speak motivational quotes with ElevenLabs TTS
+Speaks motivational quotes with ElevenLabs TTS
