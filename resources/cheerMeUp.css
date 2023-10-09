@@ -1,0 +1,105 @@
+body{
+	background: #abced8;
+}
+.wrapper{
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 200px;
+	box-sizing: border-box;
+}
+footer{
+	width: 100%;
+	position: absolute;
+	text-align: right;
+	font-style: italic;
+	padding: 10px 0;
+	bottom: 0;
+}
+.btnFlatGreen{
+	display: inline-block;
+	padding: 0.3em 1em;
+	font-family: "Times New Roman";
+	font-size: 150%;
+	text-decoration: none;
+	color: white;
+	border: solid 2px #005e15;
+	background: #005e15;
+	border-radius: 3px;
+	transition: .6s;
+}
+.btnFlatGreen:active{
+  background: white;
+  color: #005e15;
+}
+.btnFlatGreen:disabled{
+	background: #002f0a;
+	border: solid 2px #002f0a;
+	color: #808080;
+}
+
+.btnFlatPink{
+	display: inline-block;
+	padding: 0.3em 1em;
+	font-family: "Times New Roman";
+	font-size: 150%;
+	text-decoration: none;
+	color: white;
+	border: solid 2px #db7093;
+	background: #db7093;
+	border-radius: 3px;
+	transition: .6s;
+}
+.btnFlatPink:active{
+	background: white;
+	color: #db7093;
+}
+.btnFlatPink:disabled{
+	background: #6d3849;
+	border: solid 2px #6d3849;
+	color: #808080;
+}
+
+.btnFlatRed{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 80%;
+	border: solid 2px red;
+	background: red;
+	border-radius: 5px;
+	transition: .6s;
+}
+.btnFlatRed:active{
+	background: white;
+	color: red;
+}
+.btnFlatRed:disabled{
+	background: #800000;
+	border: solid 2px #800000;
+	color: #808080;
+}
+
+#APIkeyInput{
+	size: 32;
+}
+#wisdomArea{
+	font-family: "Time New Roman";
+	font-style: italic;
+	font-size: 150%;
+}
+#inputAreaDiv{
+	width: 100%;
+}
+#inputArea{
+	font-family: "Time New Roman";
+	font-size: 150%;
+	width: 80%;
+}
+.alignright{
+	text-align: right;
+}
+@media screen and (max-width: 600px) {
+	.alignright{
+		font-size: 80%;
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Cheer me up!</title>
+		<link rel="shortcut icon" href="./red-kiwi-bird.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="./resources/cheerMeUp.css">
+	</head>
+	<body>
+	<div class="wrapper">
+	<label for="APIkeyInput">API Key:</label>
+	<input type="password" id="APIkeyInput" value="">
+	<button id="signIn">Set up</button>
+	<button id="forgetAPIK">Forget API-Key</button><br/>
+	<div class="alignright">
+		<span id="userStatus" style="margin: 0 0 0 auto"></span>
+	</div>
+	<label for="voiceSelector">Voice:</label>
+	<select id="voiceSelector"></select>
+	<hr>
+	<button id="giveMeWisdom" class="btnFlatGreen">Give me a piece of wisdom</button>
+	<button id="replayWisdom" class="btnFlatRed">Replay</button>
+	<div id="wisdomArea">
+	&nbsp;<br/>&nbsp;
+	</div>
+	<div id="inputAreaDiv">
+		<textarea type="text" id="inputArea"></textarea>
+		<button id="utter" class="btnFlatRed">Utter this</button>
+	</div>
+	<button id="displayText" class="btnFlatPink">Display text</button>
+
+	<footer>
+	Powered by ElevenLabs' TTS Engine & GitHub JakubPetriska/quotes.csv
+	</footer>
+
+	</div>
+
+	<script src="./resources/quotes.js"></script>
+
+	<script src="./resources/cheerMeUp.js"></script>
+
+	</body>
+</html>
