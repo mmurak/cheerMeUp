@@ -2,8 +2,7 @@
 
 このアプリケーションは、過去・現在の偉人や賢人の名言（英語）をElevenLabsの音声合成機能を用いて再生することで、リスニング能力の向上とモチベーションアップを図ろうというものです。
 
-![Screen image]
-(img/Fig.jpg)
+![Fig](https://github.com/mmurak/cheerMeUp/assets/7446897/d1fe80a5-bb2f-4a35-a130-ef2868926d05)
 
 ## 必要なもの
 
@@ -35,24 +34,24 @@
 
 1. [https://elevenlabs.io/](https://elevenlabs.io/) にアクセスし、右上のボタンをクリックする。
 
-(img/FigA.jpg)
+![FigA](https://github.com/mmurak/cheerMeUp/assets/7446897/0ced3fe7-7642-45c1-94c5-306131bc48c9)
 
 2. 以下の画面が表示されるため、Sign upをクリックする。
 
-(img/FigB.jpg)
+![FigB](https://github.com/mmurak/cheerMeUp/assets/7446897/6872607e-bd94-4abf-9f37-ebb5293569f1)
 
 3. 以下の画面が表示されるため、Googleのアカウントでサインアップするか、自前のメールアドレスでサインアップするかに応じて必要事項を記述する（この手順の終了後、確認メールが届きます）。
 
-(img/FigC.jpg)
+![FigC](https://github.com/mmurak/cheerMeUp/assets/7446897/5a8634b2-a234-4a03-a5e6-6464f8ac50be)
 
 4. サインインすると以下の画面が表示されるため、ユーザーアイコン（ここでは家紋が表示されています）をクリックする。
 
-(img/FigD.jpg)
+![FigD](https://github.com/mmurak/cheerMeUp/assets/7446897/77eebfe9-d3ec-4e6c-adc2-00f02e1a630c)
 
 5. すると画面が以下のようになるため、［Profile］をクリックする。
 
-(img/FigE.jpg)
+![FigE](https://github.com/mmurak/cheerMeUp/assets/7446897/3eeffaf5-463c-4aa7-86fa-812649b80a24)
 
 6. 以下のようなProfile Setting画面が表示されるため、「目」のアイコンをクリックすると、API Key欄の「**********」が文字群に変化するため、その文字群をコピーする。
 
-(img/FigF.jpg)
+![FigF](https://github.com/mmurak/cheerMeUp/assets/7446897/8bbe4613-920e-4603-8da8-7fdfa835846f)
