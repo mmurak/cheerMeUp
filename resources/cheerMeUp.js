@@ -4,6 +4,7 @@ class GlobalManager {
 		this.signIn = document.getElementById("signIn");
 		this.forgetAPIK = document.getElementById("forgetAPIK");
 		this.voiceSelector = document.getElementById("voiceSelector");
+		this.speedSelector = document.getElementById("speedSelector");
 		this.userStatus = document.getElementById("userStatus");
 		this.giveMeWisdom = document.getElementById("giveMeWisdom");
 		this.replayWisdom = document.getElementById("replayWisdom");
@@ -90,6 +91,7 @@ addEventListener("load", () => {
 			if (G.currentQuote != "")  G.replayWisdom.disabled = false;
 			G.utter.disabled = false;
 		};
+		G.audio.playbackRate = Number(G.speedSelector.value);
 		G.audio.play();
 		G.inputArea.focus();
 	});
@@ -229,6 +231,7 @@ function speak(text, apiKey, voiceID) {
 	.then(blob => {
 		const url = window.URL.createObjectURL(blob);
 		G.audio = new Audio(url);
+		G.audio.playbackRate = Number(G.speedSelector.value);
 		G.audio.play();
 		G.audio.onended = () => {
 //			status.innerText += '\nAudio has finished playing!';
@@ -253,6 +256,7 @@ function userUtter(text, apiKey, voiceID) {
 			if (G.currentQuote != "")  G.replayWisdom.disabled = false;
 			G.utter.disabled = false;
 		};
+		G.audio2.playbackRate = Number(G.speedSelector.value);
 		G.audio2.play();
 		return;
 	}
@@ -288,6 +292,7 @@ function userUtter(text, apiKey, voiceID) {
 	.then(blob => {
 		const url = window.URL.createObjectURL(blob);
 		G.audio2 = new Audio(url);
+		G.audio2.playbackRate = Number(G.speedSelector.value);
 		G.audio2.play();
 		G.audio2.onended = () => {
 //			status.innerText += '\nAudio has finished playing!';
