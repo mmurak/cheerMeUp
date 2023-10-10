@@ -59,6 +59,8 @@ addEventListener("load", () => {
 	// load a new wisdom and speak
 	G.giveMeWisdom.addEventListener("click", () => {
 		G.wisdomArea.innerHTML = "&nbsp;<br/>&nbsp;";
+		G.inputArea.value = "";
+		G.inputArea.focus();
 		let quote = selectOneQuote();
 		G.currentQuote = quote[0];
 		G.currentAuthor = quote[1];
@@ -89,6 +91,7 @@ addEventListener("load", () => {
 			G.utter.disabled = false;
 		};
 		G.audio.play();
+		G.inputArea.focus();
 	});
 
 	// speak the user entered utterance
@@ -99,6 +102,7 @@ addEventListener("load", () => {
 		G.replayWisdom.disabled = true;
 		G.utter.disabled = true;
 		userUtter(G.inputArea.value, G.apiKey.value, voiceID);
+		G.inputArea.focus();
 	});
 
 	// Display text control
@@ -112,6 +116,7 @@ addEventListener("load", () => {
 			displayLine += "an unknown person.";
 		}
 		G.wisdomArea.innerHTML = displayLine;
+		G.inputArea.focus();
 	});
 });
 
