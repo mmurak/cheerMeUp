@@ -105,15 +105,19 @@ addEventListener("load", () => {
 	G.displayText.addEventListener("click", () => {
 		if (G.currentQuote == "")  return;
 		let displayLine = G.currentQuote + "<br/>";
-		displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A <a href='https://google.com/search?q=\"" + G.currentQuote + "\"' style='text-decoration:none;color:black' target='_blank'>quote</a> from ";
+		displayLine += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--A <a href='https://google.com/search?q=\"" + singleQuoteEscape(G.currentQuote) + "\"' style='text-decoration:none;color:black' target='_blank'>quote</a> from ";
 		if (G.currentAuthor != "") {
-			displayLine += "<a href='https://google.com/search?q=\"" + G.currentAuthor + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
+			displayLine += "<a href='https://google.com/search?q=\"" + singleQuoteEscape(G.currentAuthor) + "\"' target='_blank'>" + G.currentAuthor + "</a>.";
 		} else {
 			displayLine += "an unknown person.";
 		}
 		G.wisdomArea.innerHTML = displayLine;
 	});
 });
+
+function singleQuoteEscape(text) {
+	return text.replaceAll("'", "’");
+}
 
 function setUp(apiKey) {
 	localStorage.setItem(G.lsAPI, apiKey);
