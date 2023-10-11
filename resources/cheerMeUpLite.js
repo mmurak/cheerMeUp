@@ -96,7 +96,6 @@ function singleQuoteEscape(text) {
 
 function constructVoiceSelector(prefix) {
 	const voiceList = G.speechEngine.getVoices(prefix, true, true);  //   speechSynthesis.getVoices();
-	console.log(voiceList);
 	for (let i=0; i<voiceList.length; i++) {
 		const newOption = document.createElement('option');
 		newOption.value = voiceList[i].voiceURI;
