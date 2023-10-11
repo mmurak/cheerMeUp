@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Cheer me up!</title>
+		<link rel="shortcut icon" href="./red-kiwi-bird.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="./resources/cheerMeUp.css">
+	</head>
+	<body>
+	<div class="wrapper">
+	<label for="voiceSelector">Voice:</label>
+	<select id="voiceSelector"></select>
+	<label for="speedSelector">Speed:</label>
+	<select id="speedSelector">
+	<option value="0.2">0.2</option>
+	<option value="0.4">0.4</option>
+	<option value="0.6">0.6</option>
+	<option value="0.8">0.8</option>
+	<option value="1.0" selected>1.0</option>
+	<option value="1.2">1.2</option>
+	<option value="1.4">1.4</option>
+	<option value="1.6">1.6</option>
+	<option value="1.8">1.8</option>
+	<option value="2.0">2.0</option>
+	</select>
+	<label for="pitchSelector" id="pitchLabel">Pitch (1.0): </label>
+	<input type="range" min="0.1" max="2" value="1" step="0.1" id="pitchSelector"/>
+	<hr>
+	<button id="giveMeWisdom" class="btnFlatGreen">Give me a piece of wisdom</button>
+	<button id="replayWisdom" class="btnFlatRed">Replay</button>
+	<div id="wisdomArea">
+	&nbsp;<br/>&nbsp;
+	</div>
+	<div id="inputAreaDiv">
+		<textarea type="text" id="inputArea"></textarea>
+		<button id="utter" class="btnFlatRed">Utter this</button>
+	</div>
+	<button id="displayText" class="btnFlatPink">Display text</button>
+
+	<footer>
+	Powered by ElevenLabs' TTS Engine & GitHub JakubPetriska/quotes.csv
+	</footer>
+
+	</div>
+
+	<script src="./resources/quotes.js"></script>
+
+	<script src="./resources/SpeechEngine.js"></script>
+
+	<script src="./resources/cheerMeUpLite.js"></script>
+
+	</body>
+</html>
